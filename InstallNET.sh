@@ -1,7 +1,7 @@
 #!/bin/bash
 ## License: GPL
 ## It can reinstall Debian, Ubuntu, system with network.
-## Default root password: 111111.online
+## Default root password: 222222.online
 
 export tmpVER=''
 export tmpDIST=''
