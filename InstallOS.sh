@@ -1,5 +1,5 @@
 #!/bin/sh
-## Default root password: 111111.online
+## Default root password: 222222.online
 
 if [[ $EUID -ne 0 ]]; then
     clear
@@ -187,11 +187,11 @@ function Start() {
   echo -ne "\nYour option: "
   read N
   case $N in
-    1) echo -e "\nPassword: 111111.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 9 -v 64 -a $NETSTR $DMIRROR ;;
-    2) echo -e "\nPassword: 111111.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 10 -v 64 -a $NETSTR $DMIRROR ;;
-    3) echo -e "\nPassword: 111111.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 11 -v 64 -a $NETSTR $DMIRROR ;;
-    4) echo -e "\nPassword: 111111.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -u 18.04 -v 64 -a $NETSTR $UMIRROR ;;
-    5) echo -e "\nPassword: 111111.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -u 20.04 -v 64 -a $NETSTR $UMIRROR ;;
+    1) echo -e "\nPassword: 222222.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 9 -v 64 -a $NETSTR $DMIRROR ;;
+    2) echo -e "\nPassword: 222222.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 10 -v 64 -a $NETSTR $DMIRROR ;;
+    3) echo -e "\nPassword: 222222.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -d 11 -v 64 -a $NETSTR $DMIRROR ;;
+    4) echo -e "\nPassword: 222222.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -u 18.04 -v 64 -a $NETSTR $UMIRROR ;;
+    5) echo -e "\nPassword: 222222.online\n"; read -s -n1 -p "Press any key to continue..." ; bash /tmp/InstallNET.sh -u 20.04 -v 64 -a $NETSTR $UMIRROR ;;
     6)
       echo -e "\n"
       read -r -p "Custom image URL: " imgURL
