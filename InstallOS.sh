@@ -51,7 +51,7 @@ function isValidIp() {
 
 function ipCheck() {
   isLegal=0
-  for add in $MAINIP $GATEWAYIP $NETMASK; do
+  for add in $MAINIP $GATEWAYIP $MASK; do
     isValidIp $add
     if [ $? -eq 1 ]; then
       isLegal=1
@@ -167,7 +167,7 @@ function Start() {
     rm -f /tmp/InstallNET.sh
   fi
 
-  wget --no-check-certificate -qO /tmp/InstallNET.sh 'https://raw.githubusercontent.com/yeahwu/InstallOS/main/InstallNET.sh' && chmod a+x /tmp/InstallNET.sh
+  wget --no-check-certificate -qO /tmp/InstallNET.sh 'https://raw.githubusercontent.com/wxmbaci/InstallOS/main/InstallNET.sh' && chmod a+x /tmp/InstallNET.sh
 
   DMIRROR=''
   UMIRROR=''
